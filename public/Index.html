@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Computer Dictionary</title>
+		<link href="style.css" rel="stylesheet" />
+		<script src="../node_modules/axios/dist/axios.min.js" defer></script>
+		<script type="module" src="script.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<header><h1>🖥️ Computer Dictionary 📱</h1></header>
+			<article>
+				<div class="form-container">
+					<form id="form" autocomplete="off" class="form-container-container">
+						<input
+							class="form-container-input-txt"
+							type="text"
+							name="search"
+							placeholder="Search for a term..."
+						/>
+						<!-- <button class="form-container-btn" id="search" type="button">
+							Submit
+						</button> -->
+						<input class="submit_btn" type="submit" value="Search" />
+					</form>
+				</div>
+			</article>
+			<session class="modal_window">
+				<div class="modal hidden">
+					<button class="close-modal">&times;</button>
+					<h1>You Have Searched For 📑</h1>
+					<br />
+					<h2 class="modal_term_container">
+						🔍 Term:
+						<p class="modal_term"></p>
+					</h2>
+					<br />
+					<h3 class="modal_term_container">
+						📝 Defination:
+						<p class="modal_Def"></p>
+					</h3>
+					<br />
+					<h4 class="modal_term_container">
+						📒 Term Note:
+						<p class="modal_Not"></p>
+					</h4>
+					<br />
+					<h4 class="modal_term_container">
+						👅 Lang:
+						<p class="modal_Lang"></p>
+					</h4>
+				</div>
+				<div class="overlay hidden"></div>
+			</session>
+			<footer>
+				<h6 class="footer-container">
+					<strong class="Copyright">&#169;</strong> Copyright 2023
+					Computerdictionary.com
+				</h6>
+			</footer>
+		</div>
+	</body>
+</html>
