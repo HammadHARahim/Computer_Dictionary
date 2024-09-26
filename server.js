@@ -17,6 +17,7 @@ app.use(
 	})
 );
 app.use('/api/v1', mid_Auth, router);
+app.use(express.static('public'));
 
 //templete engine
 app.set('views', path.join(__dirname, 'views'));
